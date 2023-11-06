@@ -76,23 +76,82 @@ Before running the Drowsiness Detection System, you need to ensure you have the 
    pip install numpy argparse dlib opencv-python matplotlib tensorflow pillow pyttsx3 \
    pythonnet twilio imutils geocoder pygame
 
+2. Download the pre-trained shape predictor model for face detection:
+   You can download the model from the Dlib official website.
+   Once downloaded, unzip the file and place it in the project directory.
 
-## Usage
+3. Download the pre-trained eye and mouth yawn models:
 
-[Provide usage instructions as previously mentioned]
+   These models can be obtained from your training process or another source, and they       should be placed in the project directory under the specified paths in your code          (e.g., Version2-Eye Model and Version2-Mouth Model).
+
+4. Prepare the sound files:
+
+   Place an audio file named alarm.mp3 in the project directory for the alarm sound.
+   Configure your email and Twilio credentials:
+
+5. Configure your email and Twilio credentials:
+   Update the following variables in your code with your own email and Twilio account        information:
+
+   ```bash
+   SENDER_EMAIL and SENDER_PASSWORD for email alert.
+   account_sid and auth_token for Twilio SMS alert.
+
+6. Launch the application:
+
+   Run the application using the provided Python script:
+   ```bash
+   python DrowsinessDetectionSystem.py
+
+7. Use the system:
+
+   The application will start capturing video from your webcam and monitoring for            drowsiness. You can interact with the system through the graphical user interface         (GUI) provided.
+
+Note: Ensure that you have a working webcam or camera connected to your machine to use this system.
+
+Feel free to customize the installation instructions further if there are any additional details or specific requirements for your project.
+
+
+To use the Drowsiness Detection System, follow these instructions:
+
+1. Launch the application by running the provided Python script.
+
+2. The system will start capturing video from your webcam, analyzing your facial features, and monitoring for signs of drowsiness.
+
+3. The graphical user interface (GUI) provides the following functionality:
+   - **Volume Control:** Click the volume button to mute/unmute the alarm sound.
+   - **Settings:** Click the settings button to customize the email address for receiving alerts. By default, it's set to 'bellelim0621@gmail.com'.
+   - **Alerts:** The system will trigger both warnings and alarms when drowsiness is detected.
+   - **Multiple Instances of Drowsiness:** If the system detects multiple instances of drowsiness, it will send an email and SMS to your emergency contact.
+
+4. Ensure you have a functional webcam or camera connected to your machine to use this system effectively.
+
 
 ## Contributing
 
-[Explain how others can contribute to your project if desired]
+If you would like to contribute to this project, you are welcome to do so. Here are some ways you can get involved:
 
-## License
-
-[Specify the project's license, e.g., MIT License]
+- Fork the repository on GitHub.
+- Make your desired changes or enhancements to the project.
+- Create a pull request with a clear description of the changes you've made.
 
 ## Acknowledgments
 
-[Give credit to any libraries, tools, or individuals who contributed to the project]
+We would like to give credit to the following libraries, tools, and individuals for their contributions to this project:
+
+- [Dlib](http://dlib.net/): Used for face detection and shape prediction.
+- [OpenCV](https://opencv.org/): Used for image processing and video capture.
+- [TensorFlow](https://www.tensorflow.org/): Used for training and deploying the eye and mouth yawn models.
+- [Pillow](https://pillow.readthedocs.io/en/stable/): Used for image manipulation.
+- [Pyttsx3](https://github.com/nateshmbhat/pyttsx3): Used for text-to-speech functionality.
+- [Twilio](https://www.twilio.com/): Used for SMS alerting.
+- [Geocoder](https://geocoder.readthedocs.io/): Used for retrieving the current location.
+- [pygame](https://www.pygame.org/): Used for playing alarm sounds.
+
+Special thanks to all the contributors and developers of these tools and libraries.
 
 ## Contact
 
-[Provide contact information for questions or feedback]
+For any questions or feedback regarding this project, please feel free to reach out to:
+
+- Your Name: Belle Lim
+- Email: bellelim0621@gmail.com
