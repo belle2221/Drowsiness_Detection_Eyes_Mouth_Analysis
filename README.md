@@ -59,7 +59,23 @@ Both the classification of eyes and mouth yawn have achieved promising performan
 
 ## Installation
 
-[Provide installation instructions as previously mentioned]
+### Prerequisites
+
+Before running the Drowsiness Detection System, you need to ensure you have the following software and libraries installed:
+
+- Python 3.x: You can download Python from the official [Python website](https://www.python.org/downloads/).
+
+### Instructions
+
+1. Clone the GitHub repository to your local machine:
+
+   ```bash
+   git clone https://github.com/yourusername/drowsiness-detection.git
+   cd drowsiness-detection
+
+   pip install numpy argparse dlib opencv-python matplotlib tensorflow pillow pyttsx3 \
+   pythonnet twilio imutils geocoder pygame
+
 
 ## Usage
 
