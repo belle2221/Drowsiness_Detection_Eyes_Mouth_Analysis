@@ -110,6 +110,7 @@ Note: Ensure that you have a working webcam or camera connected to your machine 
 
 Feel free to customize the installation instructions further if there are any additional details or specific requirements for your project.
 
+## Usage
 
 To use the Drowsiness Detection System, follow these instructions:
 
